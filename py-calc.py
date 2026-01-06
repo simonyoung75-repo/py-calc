@@ -8,6 +8,26 @@ def mul(x, y):
 def div(x, y):
     return round (x/y)
 
+# trying to find a way to have it check if the result was rounded, if it was, it tells the user at the end
+def div_check(x, y):
+    raw_result = x/y
+    rounded_result = round(raw_result)
+    
+    # Check if it was already a whole number
+    if raw_result == rounded_result:
+        message = " Exactly, no rounding needed!"
+
+    # Check if it was rounded up
+    elif rounded_result > raw_result:
+        message = "This was rounded up"
+
+    # Check if it was rounded down
+    else:
+        message = "This was rounded down"
+        
+    return int(rounded_result), message
+
+
 # asking users to input an operation and creating a variable for the input...
 print("") # just to make it look prettier in the console
 print("Pease select your operation.")
@@ -79,7 +99,8 @@ match int(choice):
     case 3:
         print(f"{num1} + {num2} = {mul(num1,num2)}")
     case 4:
-        print(f"{num1} + {num2} = {div(num1,num2)}")
+        result, message = div_check(num1, num2) # calling the div_check function to get both the result and the message with tuple unpacking
+        print(f"{num1} / {num2} = {result} ({message})") # displaying the result along with the rounding message
 
 # me being stupid again!
 print("")
