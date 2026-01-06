@@ -6,7 +6,7 @@ def sub(x, y):
 def mul(x, y):
     return x*y
 def div(x, y):
-    return x/y
+    return round (x/y)
 
 # asking users to input an operation and creating a variable for the input...
 print("") # just to make it look prettier in the console
@@ -85,4 +85,3 @@ match int(choice):
 print("")
 print("Thanks for using my calculator, don't forget to tell Sam I'm a better developer than he is now!!")
 print("")
-print("Now, how does this get to git using source control and stuff... ")  # testing to see how this git thing works
