@@ -85,3 +85,4 @@ match int(choice):
 print("")
 print("Thanks for using my calculator, don't forget to tell Sam I'm a better developer than he is now!!")
 print("")
+print("Now, how does this get to git using source control and stuff... ")  # testing to see how this git thing works
