@@ -103,6 +103,12 @@ match int(choice):
         print(f"{num1} / {num2} = {result} ({message})") # displaying the result along with the rounding message
 
 # me being stupid again!
-print("")
-print("Thanks for using my calculator, don't forget to tell Sam I'm a better developer than he is now!!")
-print("")
+
+lastString = '''
+
+Thanks for using my simple calculator
+I hope you had fun using it!
+Dont forget to tell Sam I'm a better developer than he is now!!
+
+'''
+print(lastString)
