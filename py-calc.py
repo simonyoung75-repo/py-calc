@@ -107,7 +107,7 @@ match int(choice):
 lastString = '''
 
 Thanks for using my simple calculator
-I hope you had fun using it!
+I hope you had fun using it :) 
 Dont forget to tell Sam I'm a better developer than he is now!!
 
 '''
